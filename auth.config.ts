@@ -13,7 +13,7 @@ export default defineConfig({
       clientSecret: import.meta.env.AUTH_GOOGLE_SECRET,
     }),
     Resend({
-      apiKey: import.meta.env.AUTH_RESEND_KEY,
+      apiKey: import.meta.env.AUTH_RESEND_API_KEY,
     })
   ],
   adapter: XataAdapter(client),
