@@ -1,0 +1,280 @@
+{
+  "id": "mig_cr8b2r8nn75ead7iajvg",
+  "parentID": "mig_cr8b2cgnn75ead7iajrg",
+  "checksum": "1:e25941b93cc00ab5a05247bcb74687693fae9605d129fc3e34a331e0841d3fde",
+  "operations": [
+    {
+      "addTable": {
+        "table": "auth_users"
+      }
+    },
+    {
+      "addTable": {
+        "table": "auth_accounts"
+      }
+    },
+    {
+      "addTable": {
+        "table": "auth_verificationTokens"
+      }
+    },
+    {
+      "addTable": {
+        "table": "auth_users_accounts"
+      }
+    },
+    {
+      "addTable": {
+        "table": "auth_users_sessions"
+      }
+    },
+    {
+      "addTable": {
+        "table": "auth_sessions"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "email",
+          "type": "email"
+        },
+        "table": "auth_users"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "emailVerified",
+          "type": "datetime"
+        },
+        "table": "auth_users"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "name",
+          "type": "string"
+        },
+        "table": "auth_users"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "image",
+          "type": "string"
+        },
+        "table": "auth_users"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "user",
+          "type": "link",
+          "link": {
+            "table": "auth_users"
+          }
+        },
+        "table": "auth_accounts"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "type",
+          "type": "string"
+        },
+        "table": "auth_accounts"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "provider",
+          "type": "string"
+        },
+        "table": "auth_accounts"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "providerAccountId",
+          "type": "string"
+        },
+        "table": "auth_accounts"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "refresh_token",
+          "type": "string"
+        },
+        "table": "auth_accounts"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "access_token",
+          "type": "string"
+        },
+        "table": "auth_accounts"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "expires_at",
+          "type": "int"
+        },
+        "table": "auth_accounts"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "token_type",
+          "type": "string"
+        },
+        "table": "auth_accounts"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "scope",
+          "type": "string"
+        },
+        "table": "auth_accounts"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "id_token",
+          "type": "text"
+        },
+        "table": "auth_accounts"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "session_state",
+          "type": "string"
+        },
+        "table": "auth_accounts"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "identifier",
+          "type": "string"
+        },
+        "table": "auth_verificationTokens"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "token",
+          "type": "string"
+        },
+        "table": "auth_verificationTokens"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "expires",
+          "type": "datetime"
+        },
+        "table": "auth_verificationTokens"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "user",
+          "type": "link",
+          "link": {
+            "table": "auth_users"
+          }
+        },
+        "table": "auth_users_accounts"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "account",
+          "type": "link",
+          "link": {
+            "table": "auth_accounts"
+          }
+        },
+        "table": "auth_users_accounts"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "user",
+          "type": "link",
+          "link": {
+            "table": "auth_users"
+          }
+        },
+        "table": "auth_users_sessions"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "session",
+          "type": "link",
+          "link": {
+            "table": "auth_sessions"
+          }
+        },
+        "table": "auth_users_sessions"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "sessionToken",
+          "type": "string"
+        },
+        "table": "auth_sessions"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "expires",
+          "type": "datetime"
+        },
+        "table": "auth_sessions"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "user",
+          "type": "link",
+          "link": {
+            "table": "auth_users"
+          }
+        },
+        "table": "auth_sessions"
+      }
+    }
+  ]
+}

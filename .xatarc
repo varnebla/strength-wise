@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Victor-s-workspace-434jn2.eu-west-1.xata.sh/db/rm-tracker",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
